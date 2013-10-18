@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        toqif
-// @namespace   thuecard
+// @namespace   https://github.com/alick9188
 // @description Export Thu ecard transactions to QIF file
 // @include     http://ecard.tsinghua.edu.cn/user/UserExDetails.do
 // @version     0.8
