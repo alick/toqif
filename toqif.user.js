@@ -3,7 +3,7 @@
 // @namespace   https://github.com/alick9188
 // @description Export Thu ecard transactions to QIF file
 // @include     http://ecard.tsinghua.edu.cn/user/UserExDetails.do
-// @version     0.8
+// @version     0.9
 // ==/UserScript==
 
 /*! @source http://purl.eligrey.com/github/FileSaver.js/blob/master/FileSaver.js */
@@ -44,7 +44,11 @@ var saveAs=saveAs||(navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator))|
             tranline = "T" + ((inout === '领取圈存') ? '+' : '-') + tran.substring(1) + "\n";
             memoline = "M" + datetrancnt[date] + '.在' + place + '终端' + termnum + inout + "\n";
             if (inout === '消费') {
-                srcline = 'L[支出:用餐]\n';
+                if (/超市/.test(place)) {
+                    srcline = 'L[支出:食品杂货]\n';
+                } else {
+                    srcline = 'L[支出:用餐]\n';
+                }
             } else if (inout === '领取圈存') {
                 srcline = 'L[中国银行借记卡]\n';
             } else if (inout === '自助缴费(学生公寓水费)') {
