@@ -41,7 +41,7 @@ var saveAs=saveAs||(navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator))|
                 datetrancnt[date] += 1;
             }
             if (place.trim() === '') {
-                place = '未知';
+                place = '未知地点';
             }
             dateline = "D" + date.split('-').reverse().join('/') + "\n";
             tranline = "T" + ((inout === '领取圈存') ? '+' : '-') + tran.substring(1) + "\n";
