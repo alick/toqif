@@ -40,6 +40,9 @@ var saveAs=saveAs||(navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator))|
             } else {
                 datetrancnt[date] += 1;
             }
+            if (place.trim() === '') {
+                place = '未知';
+            }
             dateline = "D" + date.split('-').reverse().join('/') + "\n";
             tranline = "T" + ((inout === '领取圈存') ? '+' : '-') + tran.substring(1) + "\n";
             memoline = "M" + datetrancnt[date] + '.在' + place + '终端' + termnum + inout + "\n";
