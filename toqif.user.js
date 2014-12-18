@@ -44,7 +44,7 @@ var saveAs=saveAs||(navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator))|
                 place = '未知地点';
             }
             dateline = "D" + date.split('-').reverse().join('/') + "\n";
-            tranline = "T" + ((inout === '领取圈存') ? '+' : '-') + tran.substring(1) + "\n";
+            tranline = "T" + ((inout === '领取圈存' || inout === '支付宝充值') ? '+' : '-') + tran.substring(1) + "\n";
             memoline = "M" + datetrancnt[date] + '.在' + place + '终端' + termnum + inout + "\n";
             if (inout === '消费') {
                 if (/超市/.test(place)) {
@@ -56,6 +56,8 @@ var saveAs=saveAs||(navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator))|
                 srcline = 'L[中国银行借记卡]\n';
             } else if (inout === '自助缴费(学生公寓水费)') {
                 srcline = 'L[支出:水电费:水]\n';
+            } else if (inout === '支付宝充值') {
+                srcline = 'L[余额宝]\n';
             } else {
                 srcline = 'L[支出:杂项]\n';
             }
