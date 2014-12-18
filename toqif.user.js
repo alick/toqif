@@ -3,7 +3,7 @@
 // @namespace   https://github.com/alick9188
 // @description Export Thu ecard transactions to QIF file
 // @include     http://ecard.tsinghua.edu.cn/user/UserExDetails.do
-// @version     0.9
+// @version     1.0
 // ==/UserScript==
 
 /*! @source http://purl.eligrey.com/github/FileSaver.js/blob/master/FileSaver.js */
