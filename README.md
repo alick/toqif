@@ -22,7 +22,7 @@ The latest release is available at [GitHub][gh] and [Greasy Fork][gf].
 
 ToQIF is under the MIT License.
 
-Copyright (c) 2013 Alick Zhao
+Copyright (c) 2013-2014 Alick Zhao
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
