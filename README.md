@@ -4,14 +4,19 @@
 ToQIF is a Greasemonkey script that export Thu ecard transactions to an QIF
 file, ready for downloading and importing into GnuCash.
 
-Note: you need to log into ecard.tsinghua, navigate to the transcation page,
-enter a query to be able to see the QIF button. You need to enter the query to
-see the lastest transactions. At most 20 transactions are displayed on one page,
-and that is also the largest number of transactions in one QIF export.
+## Usage
 
-The latest stable release is available at [userscripts.org][us].
+You need to log into ecard.tsinghua, navigate to the transcation page, enter
+a query to be able to see the QIF button. You need to enter the query to see the
+lastest transactions. At most 20 transactions are displayed on one page, and
+that is also the largest number of transactions in one QIF export.
 
-[us]: http://userscripts.org/scripts/show/180177
+## Installation
+
+The latest release is available at [GitHub][gh] and [Greasy Fork][gf].
+
+[gh]: https://github.com/alick9188/toqif/raw/master/toqif.user.js
+[gf]: https://greasyfork.org/scripts/7188-toqif
 
 ## License
 
